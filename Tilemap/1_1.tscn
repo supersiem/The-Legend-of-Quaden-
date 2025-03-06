@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=4 uid="uid://3ohclkljy60a"]
+[gd_scene load_steps=4 format=4 uid="uid://3ohclkljy60a"]
 
 [ext_resource type="TileSet" uid="uid://dygcgw2m1ya24" path="res://Tilemap/tilemap.tres" id="1_l77p8"]
 [ext_resource type="PackedScene" uid="uid://p1wg4h35x5pu" path="res://player/player.tscn" id="2_7ben1"]
+[ext_resource type="Texture2D" uid="uid://dfeh0wepesv85" path="res://icon.svg" id="3_lf7kf"]
 
 [node name="1-1" type="Node2D"]
 
@@ -12,3 +13,8 @@ tile_set = ExtResource("1_l77p8")
 
 [node name="player" parent="." instance=ExtResource("2_7ben1")]
 position = Vector2(370, 242)
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(-181, 174)
+scale = Vector2(1.04688, 1.89062)
+texture = ExtResource("3_lf7kf")
